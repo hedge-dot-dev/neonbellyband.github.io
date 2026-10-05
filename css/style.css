@@ -3575,6 +3575,35 @@ html[data-title="archivo"]     { --title-scale: 0.92; }
   line-height: 1.4;
 }
 
+.epk-quote-list { margin-top: 16px; }
+
+.epk-quote {
+  margin: 0 0 14px;
+  padding: 18px 22px;
+  background: var(--panel-alt);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--pink);
+}
+
+.epk-quote-text {
+  margin: 0;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.35;
+  color: #fff;
+  text-shadow: 0 0 14px rgba(var(--accent-rgb), 0.45);
+}
+
+.epk-quote-source {
+  margin-top: 8px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.epk-quote-source::before { content: "- "; }
+
 .epk-highlight-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
