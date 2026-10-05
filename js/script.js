@@ -570,7 +570,8 @@
 //
 // The first .show-row in each .shows-list is treated as the next show.
 // Add data-show-date="YYYY-MM-DD" to that row and this drops a date badge
-// into its .details text. Past dates intentionally render no countdown.
+// into its .details text. Rows whose date has passed are removed from the
+// list, so the next upcoming row (or the booking CTA) takes over.
 // ---------------------------------------------------------------
 (function () {
   var DAY = 24 * 60 * 60 * 1000;
@@ -580,17 +581,26 @@
   var now = new Date();
   var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 
+  function daysUntil(row) {
+    var raw = row.getAttribute("data-show-date");
+    var match = raw && raw.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (!match) return null;
+    var showDate = new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+    return Math.round((showDate.getTime() - today.getTime()) / DAY);
+  }
+
   lists.forEach(function (list) {
+    list.querySelectorAll(".show-row").forEach(function (r) {
+      var d = daysUntil(r);
+      if (d !== null && d < 0) r.remove();
+    });
+
     var row = list.querySelector(".show-row");
     if (!row) return;
 
     var raw = row.getAttribute("data-show-date");
-    var match = raw && raw.match(/^(\d{4})-(\d{2})-(\d{2})$/);
-    if (!match) return;
-
-    var showDate = new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
-    var days = Math.round((showDate.getTime() - today.getTime()) / DAY);
-    if (days < 0) return;
+    var days = daysUntil(row);
+    if (days === null) return;
 
     var details = row.querySelector(".details");
     if (!details || details.querySelector(".show-countdown")) return;
@@ -870,6 +880,30 @@
         card.appendChild(el("span", "epk-highlight-label", h.label));
         hlMount.appendChild(card);
       }
+    });
+  }
+
+  // -- Venue quotes --
+  var quoteMount = document.getElementById("epk-quotes");
+  if (quoteMount) {
+    (EPK_DATA.quotes || []).forEach(function (q) {
+      var fig = el("figure", "epk-quote");
+      var bq = el("blockquote", "epk-quote-text");
+      bq.textContent = "“" + q.text + "”";
+      fig.appendChild(bq);
+      var cap = el("figcaption", "epk-quote-source");
+      if (q.href) {
+        var a = document.createElement("a");
+        a.href = q.href;
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.textContent = q.source;
+        cap.appendChild(a);
+      } else {
+        cap.textContent = q.source;
+      }
+      fig.appendChild(cap);
+      quoteMount.appendChild(fig);
     });
   }
 

@@ -58,6 +58,12 @@ var EPK_DATA = {
     { value: "Kimbro's & The Pond", label: "Franklin, TN venues played" }
   ],
 
+  // Verbatim venue/press quotes only, with the real source named.
+  // Add an href only when there is a real link to the post.
+  quotes: [
+    { text: "Neon Belly tore it up, the bar was packed wall to wall.", source: "The Pond, on Instagram" }
+  ],
+
   // Real, existing site photography only. alt text should describe
   // what's in the shot for accessibility.
   photos: [
