@@ -1592,25 +1592,47 @@ a.show-row-link.venue:hover {
    screens. */
 .shows-empty {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px 18px;
-  padding: 13px 18px;
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--pink);
-  background: var(--panel-alt);
+  gap: 10px;
+  padding: 28px 22px 24px;
+  text-align: center;
+  border: 1px solid rgba(var(--accent-rgb), 0.55);
+  background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.16), rgba(var(--accent2-rgb), 0.08)), var(--panel-alt);
+  box-shadow: 0 0 22px rgba(var(--accent-rgb), 0.18);
 }
 
 .shows-empty-head {
   font-family: var(--font-display);
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 26px;
+  line-height: 1.15;
   color: #fff;
+  text-shadow: 0 0 14px rgba(var(--accent-rgb), 0.5);
+}
+
+.shows-empty-sub {
+  max-width: 460px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.shows-empty-btn {
+  margin-top: 8px;
+  font-size: 17px;
+  padding: 16px 38px 16px 46px;
+}
+
+.shows-empty-btn::before { left: 18px; }
+
+.shows-empty-mail {
+  font-size: 12px;
+  color: var(--text-dim);
 }
 
 @media (max-width: 560px) {
-  .shows-empty { justify-content: center; text-align: center; }
+  .shows-empty-head { font-size: 22px; }
+  .shows-empty-btn { align-self: stretch; justify-content: center; }
 
   .poster-grid {
     display: grid;

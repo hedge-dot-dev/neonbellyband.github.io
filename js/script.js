@@ -29,6 +29,8 @@
     daysAway: function (days) { return "FALTAN " + days + " " + (days === 1 ? "DÍA" : "DÍAS"); },
     emptyShows: "Por ahora no hay fechas anunciadas",
     bookNow: "Contrátanos",
+    emptyShowsSub: "Bares, clubes y eventos privados: pon a Neon Belly en tu calendario. Hasta 3 horas de rock de los 90 y 2000, y salas que se llenan.",
+    orEmail: "o escríbenos a",
     themeLabel: "Cambiar el estilo visual del sitio",
     themeTitle: "Cambiar el look",
     themeNote: "Elige una portada.",
@@ -643,9 +645,12 @@
 
     var box = document.createElement("div");
     box.className = "shows-empty";
+    var t = function (key, fallback) { return (window.NB_LANG && window.NB_LANG.text(key)) || fallback; };
     box.innerHTML =
-      '<span class="shows-empty-head">' + ((window.NB_LANG && window.NB_LANG.text("emptyShows")) || "No shows on the books right now") + '</span>' +
-      '<a class="btn book" href="' + href + '">' + ((window.NB_LANG && window.NB_LANG.text("bookNow")) || "Book Us Now") + '</a>';
+      '<span class="shows-empty-head">' + t("emptyShows", "No shows on the books right now") + '</span>' +
+      '<span class="shows-empty-sub">' + t("emptyShowsSub", "Bars, clubs, and private events: put Neon Belly on your calendar. Up to 3 hours of 90s &amp; 2000s rock, and rooms that pack out.") + '</span>' +
+      '<a class="btn book shows-empty-btn" href="' + href + '">' + t("bookNow", "Book Us Now") + '</a>' +
+      '<a class="shows-empty-mail" href="mailto:neonbellytn@gmail.com">' + t("orEmail", "or email") + ' neonbellytn@gmail.com</a>';
     list.appendChild(box);
 
     var section = list.closest("section");
