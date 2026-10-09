@@ -48,8 +48,19 @@ Pulled from the band's Instagram (@neonbelly_band):
   The `.poster-tint-fade` CSS class recolors a black-line/transparent
   flyer to a faded pink-purple tint (used for The Pond poster); drop it
   if a new flyer is already in full color.
-- **Blog posts**: `blog.html` has a few placeholder `<article class="blog-post">`
-  entries — copy that block for each new post, newest first.
+- **Blog posts**: `blog.html` holds every post as an `<article class="blog-post">`,
+  newest first. Each post also gets its own page at `/blog/<id>/` with its own
+  Facebook/Twitter preview. To add one:
+  1. Copy a post block in `blog.html`; give it a unique `id` and the
+     `data-date`, `data-description` and `data-og-image="images/og/<id>.jpg"`
+     attributes, plus the linked `<h2>` and `post-share` row from the others.
+  2. Add a row for it in `tools/make_og_images.py` (poster + photo) and run
+     `python tools/make_og_images.py` to build the 1200x630 preview image.
+  3. Run `python tools/build_posts.py` to (re)generate `blog/<id>/index.html`.
+     Never edit those generated pages by hand.
+  After publishing, paste the post URL into Facebook's Sharing Debugger
+  (developers.facebook.com/tools/debug) and click "Scrape Again" to refresh
+  its cached preview.
 
 ## Deploying
 

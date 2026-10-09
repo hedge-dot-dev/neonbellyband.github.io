@@ -257,6 +257,7 @@
     var file = (path.split("/").pop() || "index.html").replace(".html", "");
     if (!file) file = "index";
     if (path.indexOf("/members/") !== -1) return file;
+    if (path.indexOf("/blog/") !== -1 || path.indexOf("/epk/") !== -1) return "subpage";
     return file === "index" ? "home" : file;
   }
 
