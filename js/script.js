@@ -389,6 +389,8 @@
     showDateText: function (raw, fallback) {
       if (readLang() !== SPANISH) return fallback;
       if (raw === "2026-10-03") return "Sáb, 3 oct 2026 · 8:00 PM – 11:00 PM";
+      if (raw === "2026-11-07") return "Sáb, 7 nov 2026 · Hora por confirmar";
+      if (raw === "2026-12-12") return "Sáb, 12 dic 2026 · Hora y lugar por confirmar";
       return fallback;
     },
     daysAway: function (days) {
