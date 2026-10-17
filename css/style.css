@@ -1959,6 +1959,19 @@ table.infotable td.label {
 .post-share { margin: 8px 0 0; font-size: 12px; color: var(--text-dim); }
 .post-share a { color: var(--link); }
 
+.legal-page p,
+.legal-page li { max-width: 780px; line-height: 1.6; }
+
+.legal-list { margin: 8px 0 12px; padding-left: 22px; }
+.legal-list li { margin-bottom: 6px; }
+
+.legal-nav { font-size: 13px; color: var(--text-dim); }
+.legal-nav a { color: var(--link); }
+.legal-nav strong { color: #fff; }
+
+.shows-hearing { margin: 10px 0 0; font-size: 13px; color: var(--text-dim); }
+.shows-hearing a { color: var(--link); }
+
 .post-back { margin: 0 0 12px; font-size: 13px; }
 .post-back a { color: var(--link); }
 
