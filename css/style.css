@@ -1969,6 +1969,42 @@ table.infotable td.label {
 .legal-nav a { color: var(--link); }
 .legal-nav strong { color: #fff; }
 
+/* tongue-in-cheek warning sticker on the Disclosures page: white label,
+   black type, ringed in the theme accent so it reads on every theme */
+.warning-label {
+  max-width: 460px;
+  margin: 14px 0 18px;
+  background: #fff;
+  color: #0a0a0a;
+  border: 4px solid #0a0a0a;
+  box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.75);
+}
+
+.warning-label-head {
+  padding: 8px 14px;
+  background: #0a0a0a;
+  color: #fff;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.warning-label ul { list-style: none; margin: 0; padding: 4px 14px 6px; }
+
+.legal-page .warning-label li {
+  max-width: none;
+  margin: 0;
+  padding: 9px 0;
+  border-bottom: 2px solid #0a0a0a;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.legal-page .warning-label li:last-child { border-bottom: none; }
+
 .shows-hearing { margin: 10px 0 0; font-size: 13px; color: var(--text-dim); }
 .shows-hearing a { color: var(--link); }
 
