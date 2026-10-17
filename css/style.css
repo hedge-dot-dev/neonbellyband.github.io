@@ -546,6 +546,535 @@ html[data-lang="es"] .lang-toggle {
   .home-hero-copy { padding-top: 20px; }
 }
 
+/* ---------- Social hub ---------- */
+
+html[data-theme="neonbelly"] .social-intro {
+  text-align: center;
+}
+
+.social-intro > p:not(.social-kicker),
+.social-feed-links > p {
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.social-kicker {
+  display: block;
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.social-page-links {
+  justify-content: center;
+  margin: 30px auto 26px;
+}
+
+.social-tag-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.social-tag-grid a {
+  min-width: 0;
+  padding: 13px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(4, 6, 18, 0.64);
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+}
+
+.social-tag-grid a:hover,
+.social-tag-grid a:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  background: rgba(var(--accent-rgb), 0.12);
+}
+
+.social-tag-grid span,
+.social-tag-grid strong {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.social-tag-grid span {
+  color: var(--text-dim);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.social-tag-grid strong {
+  margin-top: 3px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.social-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.social-section-heading .section-title {
+  margin-bottom: 0;
+}
+
+.social-profile-link {
+  padding-bottom: 6px;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.social-post-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 26px;
+}
+
+.social-post-card {
+  display: grid;
+  grid-template-columns: minmax(150px, 42%) minmax(0, 1fr);
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(4, 6, 18, 0.82);
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.social-post-card:hover,
+.social-post-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: #e62117;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3), 0 0 22px rgba(230, 33, 23, 0.15);
+}
+
+.social-post-image {
+  position: relative;
+  display: block;
+  min-height: 132px;
+  background: #070707;
+  overflow: hidden;
+}
+
+.social-post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 34px;
+  border-radius: 10px;
+  background: #e62117;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.5);
+}
+
+.social-post-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 18px;
+}
+
+.social-post-copy small,
+.social-post-copy strong,
+.social-post-copy > span {
+  display: block;
+}
+
+.social-post-copy small {
+  color: var(--text-dim);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.social-post-copy strong {
+  margin: 7px 0 13px;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.social-post-copy > span {
+  color: #ff5b53;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.instagram-link {
+  color: #d94ce3;
+}
+
+.social-instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.instagram-post-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(4, 6, 18, 0.82);
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.instagram-post-card:hover,
+.instagram-post-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: #d94ce3;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3), 0 0 22px rgba(217, 76, 227, 0.16);
+}
+
+.instagram-post-image {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #070707;
+}
+
+.instagram-post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instagram-reel {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.76);
+  color: #fff;
+  font-size: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+}
+
+.instagram-post-copy {
+  display: block;
+  min-width: 0;
+  padding: 13px;
+}
+
+.instagram-post-copy small,
+.instagram-post-copy strong,
+.instagram-post-copy > span {
+  display: block;
+}
+
+.instagram-post-copy small {
+  color: var(--text-dim);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.instagram-post-copy strong {
+  min-height: 2.5em;
+  margin: 5px 0 10px;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.instagram-post-copy > span {
+  color: #d94ce3;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.social-destination-grid {
+  display: grid;
+  gap: 12px;
+  max-width: 820px;
+  margin: 28px auto 0;
+}
+
+.social-destination-grid > a {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  padding: 17px 20px;
+  border: 1px solid var(--border);
+  border-left: 5px solid currentColor;
+  border-radius: 12px;
+  background: rgba(4, 6, 18, 0.78);
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.16s ease, background 0.16s ease;
+}
+
+.social-destination-grid > a:hover,
+.social-destination-grid > a:focus-visible {
+  transform: translateX(4px);
+  background: rgba(16, 18, 34, 0.94);
+}
+
+.social-destination-grid .instagram { color: #d94ce3; }
+.social-destination-grid .youtube { color: #ff453a; }
+.social-destination-grid .facebook { color: #3990ff; }
+.social-destination-grid .tiktok { color: #23d5dc; }
+
+.social-destination-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: currentColor;
+  color: #060710;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 22px;
+}
+
+.social-destination-grid strong,
+.social-destination-grid small {
+  display: block;
+}
+
+.social-destination-grid strong {
+  color: #fff;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 17px;
+}
+
+.social-destination-grid small {
+  margin-top: 2px;
+  color: var(--text-dim);
+  font-size: 13px;
+}
+
+.social-destination-grid b {
+  font-size: 22px;
+}
+
+@media (max-width: 760px) {
+  .social-tag-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .social-post-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .social-instagram-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .instagram-post-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: calc((100% - 14px) / 2);
+    justify-self: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .social-page-links {
+    width: min(100%, 300px);
+    align-items: center;
+  }
+
+  .social-page-links .btn {
+    width: 100%;
+    justify-content: center;
+    margin-inline: auto;
+  }
+
+  .social-tag-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .social-section-heading {
+    display: block;
+  }
+
+  .social-profile-link {
+    display: inline-block;
+    margin-top: 8px;
+  }
+
+  .social-post-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .social-post-image {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .instagram-post-copy strong {
+    min-height: 0;
+  }
+
+  .social-destination-grid > a {
+    gap: 12px;
+    padding: 15px;
+  }
+}
+
+/* ---------- Homepage social teaser ---------- */
+
+html[data-theme="neonbelly"] .home-social-teaser-section {
+  padding-top: 18px;
+}
+
+.home-social-teaser {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  align-items: stretch;
+  max-width: 860px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 88% 18%, rgba(217, 76, 227, 0.18), transparent 35%),
+    linear-gradient(135deg, rgba(4, 6, 18, 0.96), rgba(13, 17, 35, 0.94));
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.home-social-teaser:hover,
+.home-social-teaser:focus-visible {
+  transform: translateY(-4px);
+  border-color: #d94ce3;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.34), 0 0 28px rgba(217, 76, 227, 0.14);
+  text-decoration: none;
+}
+
+.home-social-preview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  min-height: 250px;
+  overflow: hidden;
+  background: #05060d;
+}
+
+.home-social-preview img {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  object-fit: cover;
+  transition: transform 0.24s ease, filter 0.24s ease;
+}
+
+.home-social-preview img:nth-child(2) {
+  border-inline: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+.home-social-teaser:hover .home-social-preview img,
+.home-social-teaser:focus-visible .home-social-preview img {
+  transform: scale(1.035);
+  filter: saturate(1.1);
+}
+
+.home-social-teaser-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 34px 38px;
+}
+
+.home-social-teaser-copy small {
+  color: #d94ce3;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.home-social-teaser-copy > strong {
+  display: block;
+  margin: 7px 0 12px;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: clamp(25px, 3vw, 36px);
+  line-height: 1.15;
+}
+
+.home-social-teaser-copy > strong .nb-wordmark-inline {
+  width: 3.4em;
+  height: 1.08em;
+  margin-left: 0.05em;
+  vertical-align: -0.22em;
+}
+
+.home-social-teaser-copy > span:not(.nb-wordmark-inline) {
+  color: var(--text-dim);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.home-social-teaser-copy > b {
+  margin-top: 18px;
+  color: #ff68e9;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .home-social-teaser {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .home-social-preview {
+    min-height: 0;
+    aspect-ratio: 16 / 8;
+  }
+
+  .home-social-teaser-copy {
+    padding: 26px 24px 30px;
+    text-align: center;
+  }
+}
+
 @media (max-width: 700px) {
   html[data-theme="neonbelly"] .social-button-stack {
     display: flex;
@@ -4500,6 +5029,27 @@ html[data-theme="neonbelly"] footer a:hover {
     padding-top: 28px;
   }
 
+  /* Secondary-page banners use a very wide live photo. The themed desktop
+     minimum height previously combined with its aspect ratio to make the
+     element wider than a phone viewport, exposing only the left-hand band
+     members. Let width define the height so the complete lineup stays in
+     frame. The landing-page hero has its own mobile composition. */
+  html[data-theme="neonbelly"] body:not(.landing-page) .home-hero-media {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1284 / 253;
+  }
+
+  html[data-theme="neonbelly"] body:not(.landing-page) .home-hero-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: contain;
+    object-position: center;
+  }
+
   html[data-theme="neonbelly"] .mixtape-band-callout {
     transform: none;
   }
@@ -4921,7 +5471,7 @@ html[data-theme="neonbelly"] body.landing-page {
   display: none;
 }
 
-html[data-theme="neonbelly"] body.landing-page .site-header {
+html[data-theme="neonbelly"] .site-header {
   position: sticky;
   z-index: 1000;
   top: 0;

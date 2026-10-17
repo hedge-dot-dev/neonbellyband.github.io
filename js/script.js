@@ -65,6 +65,9 @@
         [".block-section:nth-of-type(1) .section-title", "La Banda"],
         [".block-section:nth-of-type(2) .section-title", "Del Blog"],
         [".block-section:nth-of-type(2) .section-sub", "Crónicas de shows y noticias de la banda."],
+        [".home-social-teaser-copy small", "Súbele el volumen en línea"],
+        [".home-social-teaser-copy > span:not(.nb-wordmark-inline)", "Videos en vivo, publicaciones nuevas, anuncios de shows y todos los lugares donde puedes etiquetar a la banda."],
+        [".home-social-teaser-copy > b", "Visita Social →"],
         [".post-teaser:nth-of-type(1) .post-teaser-date", "9 de agosto de 2026"],
         [".post-teaser:nth-of-type(1) .post-teaser-title", "Kimbro's, de punta a punta"],
         [".post-teaser:nth-of-type(1) .post-teaser-excerpt", "Hay lugares a los que entras y de una vez sientes que tienes que ganártelos. Kimbro's es uno de esos lugares."],
@@ -103,6 +106,25 @@
       html: [
         [".fan-letter p:nth-of-type(6)", 'Así que si has aplaudido, gritado, cantado con nosotros, le has contado a un amigo, nos has seguido, publicado un video, pedido una canción, comprado una camisa, dejado una propina para la banda o simplemente te has quedado sonriendo mientras descubrimos en qué nos estamos convirtiendo... <span class="fan-closing"><span class="fan-thank-you">¡GRACIAS!</span> <span class="fan-closing-line">Tú no eres algo extra en esto; <span class="fan-sentence">¡<span class="fan-you">TÚ</span> eres la razón por la que tocamos <span class="fan-your">tus</span> canciones!</span></span></span>'],
         [".fan-merch-copy", 'Mandamos a hacer unas 40 franelas al principio, y ya se fueron. Estamos trabajando en un rediseño y vamos a imprimir más pronto. La idea es venderlas en $20, y nos ayuda saber qué tallas y modelos está buscando la gente. Escríbenos a <a href="mailto:neonbellyTN@gmail.com">neonbellyTN@gmail.com</a>; haremos lo posible por acomodarte y avisarte cuando lleguen. Si ya sabes que quieres una, puedes enviarnos por <a href="https://account.venmo.com/u/neonbelly_band" target="_blank" rel="noopener">Venmo</a> y dejar una nota con tu talla o estilo preferido. Y si te gustaría otro tipo de merch, también dinos. Las franelas son cool, pero tal vez tú tienes una mejor idea ;)']
+      ]
+    },
+    social: {
+      title: "Neon Belly | Redes Sociales",
+      titleText: [[".hero-title-sm", "Neon Belly Social"]],
+      text: [
+        [".home-hero-copy .tagline", "Sigue el ruido. Comparte el momento. Etiqueta a la banda."],
+        [".social-intro .social-kicker", "Que el show siga después del último acorde"],
+        [".social-intro .section-title", "Conecta Con La Banda"],
+        [".youtube-kicker", "Directo desde el escenario"],
+        [".instagram-kicker", "Desde el Instagram de la banda"],
+        [".social-latest .section-title", "Videos Recientes"],
+        [".social-latest .section-sub", "Los videos más recientes de nuestro canal. Por ahora hay cuatro; el quinto espera la próxima noche ruidosa."],
+        ["#instagram-heading", "Publicaciones Recientes de Instagram"],
+        [".instagram-section-sub", "Las cinco publicaciones más recientes de @neonbelly_band. Toca cualquier video para verlo en Instagram."],
+        [".social-feed-links .section-title", "Síguenos En Todas Partes"],
+        [".social-feed-links .section-sub", "Elige tu plataforma y mantente conectado. Seguir, compartir y etiquetar a la banda ayuda a que más personas encuentren el próximo show."],
+        [".social-profile-link:not(.instagram-link)", "Ver todo en YouTube →"],
+        [".instagram-link", "Seguir en Instagram →"]
       ]
     },
     shows: {
@@ -337,7 +359,8 @@
     setText('.main-nav a[href$="fans.html"]', "Fans");
     setText('.main-nav a[href$="blog.html"]', "Blog");
     setText('.main-nav a[href$="about.html"]', "La Banda");
-    setText('.main-nav a[href$="booking.html"]', "Contratar");
+    setText('.main-nav a[href*="epk/"]', "Contratar");
+    setText('.main-nav a[href$="social.html"]', "Social");
     setAttr(".nav-brand", "aria-label", "Inicio de Neon Belly");
     setAttr(".home-hero-photo", "alt", "Neon Belly tocando en vivo frente a una sala llena");
     setAttr(".home-hero-logo", "aria-label", "Logo de Neon Belly");
@@ -684,10 +707,9 @@
 // ---------------------------------------------------------------
 // Sleeve switcher.
 //
-// A small record in the corner opens a grid of theme tiles. The clean Neon
-// Belly theme is the consistent first-visit experience; the album-inspired
-// sleeves remain available as optional alternate looks. A choice persists
-// across pages and visits.
+// The clean Neon Belly theme is currently the only public experience. The
+// album-inspired sleeve code remains below for a possible future return, but
+// saved legacy choices are cleared and the chooser is not mounted.
 // ---------------------------------------------------------------
 (function () {
   var K_THEME = "neonbelly-theme";
@@ -735,13 +757,22 @@
     return null;
   }
 
-  var current = find(read(K_THEME));
-  current = current || find(DEFAULT_ID) || SETS[0];
+  var current = find(DEFAULT_ID) || SETS[0];
   attr("data-theme", current.id);
   attr("data-font", current.font);
   attr("data-title", current.title);
-  try { localStorage.removeItem("neonbelly-effect"); } catch (e) {}
+  try {
+    localStorage.removeItem(K_THEME);
+    localStorage.removeItem(K_FONT);
+    localStorage.removeItem(K_TITLE);
+    localStorage.removeItem("neonbelly-effect");
+  } catch (e) {}
   document.documentElement.removeAttribute("data-effect");
+
+  // Keep the alternate sleeve implementation dormant without exposing its
+  // control. Set this to true if the picker is intentionally brought back.
+  var THEMES_ENABLED = false;
+  if (!THEMES_ENABLED) return;
 
   function build() {
     var btn = document.createElement("button");
