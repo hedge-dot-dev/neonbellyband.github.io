@@ -43,7 +43,7 @@
     home: {
       title: "Neon Belly | Banda de covers alt-rock y grunge de los 90 y 2000",
       html: [
-        [".tagline-main", '<span class="mixtape-band-callout">Tu Banda Rock Playlist</span><span class="tagline-support">tocando favoritas del público de</span>'],
+        [".tagline-main", '<span class="mixtape-band-callout">NEON BELLY ES TU BANDA DE COVERS PARA SUBIR EL VOLUMEN</span><span class="tagline-support">tocando favoritas del público de</span>'],
         [".tagline-location", 'en Nashville y Franklin <span class="location-tail"><img class="tn-flag" src="images/optimized/tennessee-flag-96.png?v=1" width="96" height="58" alt="Tennessee" title="Tennessee"> y alrededores</span>']
       ],
       text: [
@@ -52,13 +52,19 @@
         [".stamp-row-plain:last-child", "de los 90 y 2000"],
         [".follow-sticker", "Síguenos"],
         [".btn.book", "Contrátanos"],
-        [".block-section:nth-of-type(1) .section-title", "Fechas"],
-        [".block-section:nth-of-type(1) .section-sub", "Dónde vernos próximamente."],
-        [".show-price", "¡Entrada gratis!"],
-        [".show-date-text", "Sáb, 3 oct 2026 · 8:00 PM – 11:00 PM"],
-        [".block-section:nth-of-type(2) .section-title", "La Banda"],
-        [".block-section:nth-of-type(3) .section-title", "Del Blog"],
-        [".block-section:nth-of-type(3) .section-sub", "Crónicas de shows y noticias de la banda."],
+        [".hero-shows .hero-shows-heading h2", "Próximas Fechas"],
+        [".hero-shows .hero-shows-heading a", "Todas las fechas y crónicas →"],
+        ['.show-row[data-show-date="2026-10-03"] .show-price', "¡Entrada gratis!"],
+        ['.show-row[data-show-date="2026-11-07"] .venue', "Lugar por anunciar, Murfreesboro, TN"],
+        ['.show-row[data-show-date="2026-11-07"] .show-price', "Detalles próximamente"],
+        ['.show-row[data-show-date="2026-12-12"] .venue', "Lugar por anunciar, Franklin, TN"],
+        ['.show-row[data-show-date="2026-12-12"] .show-price', "Detalles próximamente"],
+        ['.show-row[data-show-date="2026-10-03"] .show-date-text', "Sáb, 3 oct 2026 · 8:00 PM – 11:00 PM"],
+        ['.show-row[data-show-date="2026-11-07"] .show-date-text', "Sáb, 7 nov 2026"],
+        ['.show-row[data-show-date="2026-12-12"] .show-date-text', "Sáb, 12 dic 2026"],
+        [".block-section:nth-of-type(1) .section-title", "La Banda"],
+        [".block-section:nth-of-type(2) .section-title", "Del Blog"],
+        [".block-section:nth-of-type(2) .section-sub", "Crónicas de shows y noticias de la banda."],
         [".post-teaser:nth-of-type(1) .post-teaser-date", "9 de agosto de 2026"],
         [".post-teaser:nth-of-type(1) .post-teaser-title", "Kimbro's, de punta a punta"],
         [".post-teaser:nth-of-type(1) .post-teaser-excerpt", "Hay lugares a los que entras y de una vez sientes que tienes que ganártelos. Kimbro's es uno de esos lugares."],
@@ -70,7 +76,7 @@
       ],
       htmlMore: [
         [".shows-secondary", '<a href="shows.html">&raquo; Ver todas las fechas, incluso las anteriores</a>'],
-        [".block-section:nth-of-type(3) > p:last-child", '<a href="blog.html">&raquo; Lee todas las notas</a>']
+        [".block-section:nth-of-type(2) > p:last-child", '<a href="blog.html">&raquo; Lee todas las notas</a>']
       ]
     },
     fans: {
@@ -101,14 +107,24 @@
     },
     shows: {
       title: "Neon Belly | Fechas",
-      titleText: [[".hero-title-sm", "Fechas"]],
+      titleText: [[".hero-title-sm", "Neon Belly Fechas"]],
       text: [
         [".home-hero-copy .tagline", "Próximas fechas y lugares donde hemos tocado."],
         [".block-section:nth-of-type(1) .section-title", "Próximas Fechas"],
-        [".show-price", "¡Entrada gratis!"],
-        [".show-date-text", "Sáb, 3 oct 2026 · 8:00 PM – 11:00 PM"],
+        ['.show-row[data-show-date="2026-10-03"] .show-price', "¡Entrada gratis!"],
+        ['.show-row[data-show-date="2026-11-07"] .venue', "Lugar por anunciar, Murfreesboro, TN"],
+        ['.show-row[data-show-date="2026-11-07"] .show-price', "Detalles próximamente"],
+        ['.show-row[data-show-date="2026-12-12"] .venue', "Lugar por anunciar, Franklin, TN"],
+        ['.show-row[data-show-date="2026-12-12"] .show-price', "Detalles próximamente"],
+        ['.show-row[data-show-date="2026-10-03"] .show-date-text', "Sáb, 3 oct 2026 · 8:00 PM – 11:00 PM"],
+        ['.show-row[data-show-date="2026-11-07"] .show-date-text', "Sáb, 7 nov 2026"],
+        ['.show-row[data-show-date="2026-12-12"] .show-date-text', "Sáb, 12 dic 2026"],
         [".block-section:nth-of-type(2) .section-title", "Fechas Anteriores"],
-        [".block-section:nth-of-type(2) .section-sub", "Flyers de los shows que ya hicimos."],
+        [".block-section:nth-of-type(2) .section-sub", "Cada fecha anterior enlaza directamente a su crónica."],
+        [".past-show-row:nth-of-type(1) .past-show-date", "3 oct 2026"],
+        [".past-show-row:nth-of-type(2) .past-show-date", "8 ago 2026"],
+        [".past-show-row:nth-of-type(3) .past-show-date", "11 jul 2026"],
+        [".past-show-recap", "Lee la crónica →"],
         [".poster-card:nth-of-type(1) .show-venue", "En vivo en Kimbro's"],
         [".poster-card:nth-of-type(1) .show-date", "8 de agosto de 2026 · Franklin, TN"],
         [".poster-card:nth-of-type(1) .read-recap", "Lee la crónica »"],
@@ -122,7 +138,7 @@
     },
     about: {
       title: "Neon Belly | La Banda",
-      titleText: [[".hero-title-sm", "La Banda"]],
+      titleText: [[".hero-title-sm", "Sobre Neon Belly"]],
       text: [
         [".home-hero-copy .tagline", "Cinco personas de Franklin, Tennessee, y los discos que nos criaron."],
         [".block-section:nth-of-type(1) .section-title", "Quiénes Somos"],
@@ -159,6 +175,7 @@
     },
     blog: {
       title: "Neon Belly | Blog",
+      titleText: [[".hero-title-sm", "Neon Belly Blog"]],
       text: [
         [".home-hero-copy .tagline", "Crónicas de shows, merch nuevo, canciones que entran al setlist y lo que vaya pasando."],
         ["#kimbros-2026-08-08 h2", "Kimbro's, de punta a punta"],
@@ -389,6 +406,8 @@
     showDateText: function (raw, fallback) {
       if (readLang() !== SPANISH) return fallback;
       if (raw === "2026-10-03") return "Sáb, 3 oct 2026 · 8:00 PM – 11:00 PM";
+      if (raw === "2026-11-07") return "Sáb, 7 nov 2026";
+      if (raw === "2026-12-12") return "Sáb, 12 dic 2026";
       return fallback;
     },
     daysAway: function (days) {
@@ -665,20 +684,19 @@
 // ---------------------------------------------------------------
 // Sleeve switcher.
 //
-// A small record in the corner opens a grid of "sleeve" tiles. Each tile
-// is an abstract composition built from its own theme's colours: a nod to
-// the record the palette came from, never a reproduction of the artwork.
-// Picking one sets the palette plus the display and title faces chosen to
-// suit that cover, and the choice persists across pages and visits.
+// A small record in the corner opens a grid of theme tiles. The clean Neon
+// Belly theme is the consistent first-visit experience; the album-inspired
+// sleeves remain available as optional alternate looks. A choice persists
+// across pages and visits.
 // ---------------------------------------------------------------
 (function () {
   var K_THEME = "neonbelly-theme";
   var K_FONT  = "neonbelly-font";
   var K_TITLE = "neonbelly-title";
-  var K_SESSION = "neonbelly-session-theme";
-  var DEFAULT_ID = "utero";
+  var DEFAULT_ID = "neonbelly";
 
   var SETS = [
+    { id: "neonbelly",     name: "Neon Belly",    font: "barlow",      title: "archivo" },
     { id: "foo",            name: "Foo",           font: "oswald",      title: "yellowtail" },
     { id: "dirt",           name: "Dirt",          font: "stencilbold", title: "wetpaint" },
     { id: "core",           name: "Core",          font: "teko",        title: "archivo" },
@@ -700,9 +718,6 @@
 
   function store(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
   function read(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
-  function sstore(k, v) { try { sessionStorage.setItem(k, v); } catch (e) {} }
-  function sread(k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } }
-
   function applySet(set) {
     attr("data-theme", set.id);
     attr("data-font", set.font);
@@ -720,22 +735,7 @@
     return null;
   }
 
-  // An explicit pick (from the switcher) persists across visits via
-  // localStorage. Absent that, a random sleeve is chosen once per browser
-  // session (sessionStorage) so it stays put across pages but reshuffles
-  // on the next fresh visit instead of always opening on In Utero.
-  function randomSet() {
-    return SETS[Math.floor(Math.random() * SETS.length)];
-  }
-
   var current = find(read(K_THEME));
-  if (!current) {
-    current = find(sread(K_SESSION));
-    if (!current) {
-      current = randomSet();
-      sstore(K_SESSION, current.id);
-    }
-  }
   current = current || find(DEFAULT_ID) || SETS[0];
   attr("data-theme", current.id);
   attr("data-font", current.font);
@@ -836,8 +836,7 @@
       var iframe = document.createElement("iframe");
       iframe.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
       iframe.title = title;
-      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-      iframe.allowFullscreen = true;
+      iframe.allow = "accelerometer; autoplay; clipboard-write; compute-pressure; encrypted-media; fullscreen; gyroscope; picture-in-picture; unload; web-share";
       wrap.innerHTML = "";
       wrap.appendChild(iframe);
     }, { once: true });
@@ -1099,5 +1098,77 @@
     if (e.key === "Escape") close();
     else if (e.key === "ArrowLeft") show(idx - 1);
     else if (e.key === "ArrowRight") show(idx + 1);
+  });
+})();
+
+// ---------------------------------------------------------------
+// Band-name wordmark.
+//
+// Visible mentions of the band name use the cleaned, hand-painted lettering.
+// Metadata, form controls, alt text, document titles, and visually-hidden copy
+// deliberately stay as real text for search engines and assistive technology.
+// The observer also catches copy rendered later by the EPK and language tools.
+// ---------------------------------------------------------------
+(function () {
+  var BRAND_RE = /neon belly/i;
+  var BRAND_SPLIT_RE = /(neon belly)/gi;
+  var scheduled = false;
+
+  function shouldSkip(node) {
+    var parent = node.parentElement;
+    return !parent || Boolean(parent.closest(
+      "script, style, noscript, textarea, option, code, pre, svg, " +
+      ".visually-hidden, .home-nav-wordmark, .nb-wordmark-inline, [data-no-brandmark]"
+    ));
+  }
+
+  function wordmark() {
+    var mark = document.createElement("span");
+    var accessibleName = document.createElement("span");
+    mark.className = "nb-wordmark-inline";
+    mark.setAttribute("role", "img");
+    mark.setAttribute("aria-label", "Neon Belly");
+    accessibleName.className = "visually-hidden";
+    accessibleName.textContent = "Neon Belly";
+    mark.appendChild(accessibleName);
+    return mark;
+  }
+
+  function brandify(root) {
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (node) {
+        if (!BRAND_RE.test(node.nodeValue || "") || shouldSkip(node)) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var matches = [];
+    var current;
+    while ((current = walker.nextNode())) matches.push(current);
+
+    matches.forEach(function (node) {
+      var fragment = document.createDocumentFragment();
+      node.nodeValue.split(BRAND_SPLIT_RE).forEach(function (part) {
+        fragment.appendChild(BRAND_RE.test(part) ? wordmark() : document.createTextNode(part));
+      });
+      node.replaceWith(fragment);
+    });
+  }
+
+  function scheduleBrandify() {
+    if (scheduled) return;
+    scheduled = true;
+    window.requestAnimationFrame(function () {
+      scheduled = false;
+      brandify(document.body);
+    });
+  }
+
+  brandify(document.body);
+  new MutationObserver(scheduleBrandify).observe(document.body, {
+    childList: true,
+    subtree: true,
+    characterData: true
   });
 })();
