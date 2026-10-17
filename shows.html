@@ -17,14 +17,14 @@
 <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png?v=1">
 <link rel="preload" as="image" href="images/optimized/neon-belly-live-header-1284.webp?v=1" fetchpriority="high">
 <link rel="stylesheet" href="css/fonts.css?v=1">
-<link rel="stylesheet" href="css/style.css?v=141">
+<link rel="stylesheet" href="css/style.css?v=187">
 </head>
 <body class="home-page">
 
 <header class="site-header">
   <div class="nav-row">
     <a class="nav-brand" href="index.html" aria-label="Neon Belly home">
-      <span class="home-nav-wordmark hero-title" data-text="NEON BELLY">NEON BELLY</span>
+      <span class="home-nav-wordmark" role="img" aria-label="Neon Belly"><span class="visually-hidden">Neon Belly</span></span>
     </a>
     <nav class="main-nav">
       <a href="index.html">Home</a>
@@ -44,7 +44,7 @@
   </div>
 
   <div class="home-hero-copy" style="padding:26px 16px 20px;">
-    <h1 class="display hero-title hero-title-sm" data-text="Shows">Shows</h1>
+    <h1 class="display hero-title hero-title-sm" data-text="Neon Belly Shows">Neon Belly Shows</h1>
     <p class="tagline">Upcoming dates and where we've played.</p>
   </div>
 </div>
@@ -59,6 +59,16 @@
         <a class="show-row-link venue" href="https://www.facebook.com/events/1028721489974760/" target="_blank" rel="noopener">The Pond, Franklin, TN</a>
         <span class="show-price">Free show!</span>
         <span class="details">Sat, Oct 3, 2026 &middot; 8:00 PM &ndash; 11:00 PM</span>
+      </div>
+      <div class="show-row" data-show-date="2026-11-07">
+        <span class="venue">Venue TBA, Murfreesboro, TN</span>
+        <span class="show-price pending">Details coming soon</span>
+        <span class="details">Sat, Nov 7, 2026</span>
+      </div>
+      <div class="show-row" data-show-date="2026-12-12">
+        <span class="venue">Venue TBA, Franklin, TN</span>
+        <span class="show-price pending">Details coming soon</span>
+        <span class="details">Sat, Dec 12, 2026</span>
       </div>
       <!-- Add an upcoming show by copying this block inside .shows-list:
       <div class="show-row" data-show-date="YYYY-MM-DD">
@@ -81,7 +91,28 @@
 
   <section class="block-section" style="border-bottom:none;">
     <h2 class="section-title">Previous Shows</h2>
-    <p class="section-sub">Flyers from gigs we've played.</p>
+    <p class="section-sub">Past dates link directly to each show's recap.</p>
+
+    <div class="past-shows-list" aria-label="Past shows">
+      <a class="past-show-row" href="blog/the-pond-2026-10-03/">
+        <time class="past-show-date" datetime="2026-10-03">Oct 3, 2026</time>
+        <span class="past-show-venue">The Pond</span>
+        <span class="past-show-location">Franklin, TN</span>
+        <span class="past-show-recap">Read recap &rarr;</span>
+      </a>
+      <a class="past-show-row" href="blog/kimbros-2026-08-08/">
+        <time class="past-show-date" datetime="2026-08-08">Aug 8, 2026</time>
+        <span class="past-show-venue">Kimbro's</span>
+        <span class="past-show-location">Franklin, TN</span>
+        <span class="past-show-recap">Read recap &rarr;</span>
+      </a>
+      <a class="past-show-row" href="blog/the-pond-2026-07-11/">
+        <time class="past-show-date" datetime="2026-07-11">Jul 11, 2026</time>
+        <span class="past-show-venue">The Pond</span>
+        <span class="past-show-location">Franklin, TN</span>
+        <span class="past-show-recap">Read recap &rarr;</span>
+      </a>
+    </div>
 
     <div class="poster-grid">
 
@@ -133,7 +164,7 @@
   <p>&copy; <span id="year"></span> Neon Belly. Last updated: <span id="footer-updated"></span>.</p>
 </footer>
 
-<script src="js/script.js?v=110"></script>
+<script src="js/script.js?v=117"></script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

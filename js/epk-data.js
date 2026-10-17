@@ -92,7 +92,7 @@ var EPK_DATA = {
   downloads: [
     { label: "Band Photo (Horizontal)", note: "Full lineup, live at The Pond", href: "../images/optimized/blog/pond-band-1280.webp", available: true },
     { label: "Band Photo (Vertical)", note: "Not yet available", href: "../images/epk/band-photo-vertical.jpg", available: false },
-    { label: "Logo (Transparent PNG)", note: "For dark or light backgrounds", href: "../images/neon-belly-logo-transparent.png", available: true },
+    { label: "Logo (Transparent PNG)", note: "For dark or light backgrounds", href: "../images/neon-belly-logo-transparent-v2.png", available: true },
     { label: "Logo (Full Color, High-Res)", note: "Black background", href: "../images/neon-belly-logo.jpg", available: true },
     { label: "Stage Plot & Input List", note: "Not yet available (PDF)", href: "../images/epk/neon-belly-stage-plot.pdf", available: false }
   ],
