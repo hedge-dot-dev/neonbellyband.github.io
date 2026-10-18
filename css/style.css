@@ -3369,6 +3369,219 @@ a.poster-card:hover .read-recap { color: var(--pink); }
   object-fit: cover;
 }
 
+/* ---------- The name behind the band ---------- */
+
+.name-origin-heading {
+  max-width: 900px;
+  margin: 0 auto 24px;
+}
+
+.name-origin-heading .fan-kicker {
+  margin-bottom: 5px;
+}
+
+.name-origin-grid {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: 34px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.name-origin-photo {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #050505;
+  box-shadow: 0 22px 46px rgba(0, 0, 0, 0.38);
+}
+
+.name-origin-photo > img {
+  width: 100%;
+  height: auto;
+}
+
+.name-origin-photo::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(3, 5, 12, 0.82), transparent 22%);
+}
+
+.name-origin-photo figcaption {
+  position: absolute;
+  z-index: 4;
+  left: 18px;
+  right: 18px;
+  bottom: 14px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.name-origin-highlight {
+  position: absolute;
+  z-index: 3;
+  left: 41%;
+  top: 54%;
+  width: 51%;
+  height: 31%;
+  border: 3px solid var(--book);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 3px rgba(0, 0, 0, 0.48),
+    0 0 16px rgba(var(--book-rgb), 0.72),
+    inset 0 0 22px rgba(var(--book-rgb), 0.12);
+  transform: rotate(-12deg);
+  pointer-events: none;
+}
+
+.name-origin-highlight span {
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: var(--book);
+  color: #071018;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: translateX(-50%) rotate(12deg);
+}
+
+.name-origin-person {
+  position: absolute;
+  z-index: 4;
+  padding: 4px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.44);
+  border-radius: 999px;
+  background: rgba(4, 6, 15, 0.82);
+  color: #fff;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+}
+
+.name-origin-hedge {
+  left: 68%;
+  top: 35%;
+}
+
+.name-origin-nate {
+  left: 26%;
+  top: 72%;
+}
+
+.name-origin-brett {
+  left: 20%;
+  top: 34%;
+}
+
+.name-origin-jhonatan {
+  left: 43%;
+  top: 41%;
+}
+
+.name-origin-chris {
+  right: 3%;
+  top: 31%;
+}
+
+.name-origin-copy p {
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.name-origin-copy .nb-wordmark-inline {
+  width: 3.7em;
+  height: 1.2em;
+  vertical-align: -0.28em;
+}
+
+.name-origin-invite {
+  padding: 16px 18px;
+  border-left: 4px solid var(--book);
+  border-radius: 0 10px 10px 0;
+  background: rgba(var(--book-rgb), 0.08);
+}
+
+.name-origin-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 22px;
+  padding: 17px 20px;
+  border: 1px solid rgba(var(--book-rgb), 0.58);
+  border-radius: 12px;
+  background: var(--book);
+  color: #071018;
+  text-decoration: none;
+  transition: transform 0.16s ease, filter 0.16s ease;
+}
+
+.name-origin-cta:hover,
+.name-origin-cta:focus-visible {
+  color: #071018;
+  text-decoration: none;
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.name-origin-cta span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.name-origin-cta strong {
+  margin-top: 2px;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 17px;
+}
+
+@media (max-width: 760px) {
+  .name-origin-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+
+  .name-origin-photo {
+    width: min(100%, 440px);
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 440px) {
+  .name-origin-highlight span {
+    font-size: 8px;
+  }
+
+  .name-origin-copy p {
+    font-size: 15px;
+  }
+
+  .name-origin-cta {
+    align-items: center;
+    text-align: center;
+  }
+}
+
 /* ---------- Two-column layout (member pages, booking) ---------- */
 
 .two-col {

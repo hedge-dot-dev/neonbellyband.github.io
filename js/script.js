@@ -101,11 +101,20 @@
         [".fan-action:nth-of-type(2) .section-title", "Merch"],
         [".fan-action:nth-of-type(2) .fan-disabled", "Camisas pronto"],
         [".fan-photos .section-title", "Desde La Sala"],
-        [".fan-photos .section-sub", "Fotos de shows, amigos y noches que vale la pena recordar."]
+        [".fan-photos .section-sub", "Fotos de shows, amigos y noches que vale la pena recordar."],
+        [".name-origin .fan-kicker", "Knee on belly → Neon Belly"],
+        [".name-origin .section-title", "¿Qué Hay en un Nombre?"],
+        [".name-origin-copy p:nth-of-type(1)", "El nombre no salió de una lista de palabras de rock. Tres de los cinco integrantes de Neon Belly entrenan Brazilian Jiu-Jitsu juntos en Triangle Academy, aquí en Franklin."],
+        [".name-origin-copy p:nth-of-type(2)", "En Jiu-Jitsu, knee on belly —rodilla sobre el abdomen— es una posición de control exactamente tan cómoda como suena. Dilo rápido: knee on belly. Neon Belly. El juego de palabras se quedó y se convirtió en el nombre de la banda."],
+        [".name-origin-copy p:nth-of-type(3)", "La prueba fotográfica está aquí: Hedge, nuestro vocalista, demuestra la posición sobre Nate, nuestro baterista, mientras el resto de la banda disfruta demasiado del momento."],
+        [".name-origin-photo figcaption", "La voz aplica presión. La batería reconsidera el arreglo."],
+        [".name-origin-cta span", "Entrena con nuestros amigos en"],
+        [".name-origin-cta strong", "Triangle Academy of Jiu-Jitsu →"]
       ],
       html: [
         [".fan-letter p:nth-of-type(6)", 'Así que si has aplaudido, gritado, cantado con nosotros, le has contado a un amigo, nos has seguido, publicado un video, pedido una canción, comprado una camisa, dejado una propina para la banda o simplemente te has quedado sonriendo mientras descubrimos en qué nos estamos convirtiendo... <span class="fan-closing"><span class="fan-thank-you">¡GRACIAS!</span> <span class="fan-closing-line">Tú no eres algo extra en esto; <span class="fan-sentence">¡<span class="fan-you">TÚ</span> eres la razón por la que tocamos <span class="fan-your">tus</span> canciones!</span></span></span>'],
-        [".fan-merch-copy", 'Mandamos a hacer unas 40 franelas al principio, y ya se fueron. Estamos trabajando en un rediseño y vamos a imprimir más pronto. La idea es venderlas en $20, y nos ayuda saber qué tallas y modelos está buscando la gente. Escríbenos a <a href="mailto:neonbellyTN@gmail.com">neonbellyTN@gmail.com</a>; haremos lo posible por acomodarte y avisarte cuando lleguen. Si ya sabes que quieres una, puedes enviarnos por <a href="https://account.venmo.com/u/neonbelly_band" target="_blank" rel="noopener">Venmo</a> y dejar una nota con tu talla o estilo preferido. Y si te gustaría otro tipo de merch, también dinos. Las franelas son cool, pero tal vez tú tienes una mejor idea ;)']
+        [".fan-merch-copy", 'Mandamos a hacer unas 40 franelas al principio, y ya se fueron. Estamos trabajando en un rediseño y vamos a imprimir más pronto. La idea es venderlas en $20, y nos ayuda saber qué tallas y modelos está buscando la gente. Escríbenos a <a href="mailto:neonbellyTN@gmail.com">neonbellyTN@gmail.com</a>; haremos lo posible por acomodarte y avisarte cuando lleguen. Si ya sabes que quieres una, puedes enviarnos por <a href="https://account.venmo.com/u/neonbelly_band" target="_blank" rel="noopener">Venmo</a> y dejar una nota con tu talla o estilo preferido. Y si te gustaría otro tipo de merch, también dinos. Las franelas son cool, pero tal vez tú tienes una mejor idea ;)'],
+        [".name-origin-invite", '¿Te interesa probar Jiu-Jitsu? Visita Triangle Academy y dile a Clay que <strong>NEON BELLY te mandó</strong>. O ponte un poquito demasiado alborotado en un show y tal vez te demos una demostración muy extraoficial. 😂']
       ]
     },
     social: {
@@ -200,6 +209,20 @@
       titleText: [[".hero-title-sm", "Neon Belly Blog"]],
       text: [
         [".home-hero-copy .tagline", "Crónicas de shows, merch nuevo, canciones que entran al setlist y lo que vaya pasando."],
+        ["#the-pond-2026-10-03 .post-title-text", "De Vuelta en The Pond, Otra Vez Lleno"],
+        ["#the-pond-2026-10-03 .blog-meta", "Publicado el 9 de octubre de 2026 por Neon Belly"],
+        ["#the-pond-2026-10-03 p:nth-of-type(1)", "No podríamos estar más felices de volver a The Pond. Ahí fue donde Neon Belly tocó su primer show en julio, así que recibir la invitación para regresar el 3 de octubre se sintió como volver a casa."],
+        ["#the-pond-2026-10-03 p:nth-of-type(2)", "Y volvimos a llenar el lugar. De pared a pared, toda la noche. The Pond lo dijo mejor que nosotros en su Instagram después: «Neon Belly la rompió; el bar estuvo lleno de pared a pared». Nos quedamos felices con eso."],
+        ["#the-pond-2026-10-03 p:nth-of-type(3)", "También agregamos 13 canciones nuevas al setlist, así que ahora hay mucho más que escuchar que la última vez que nos viste tocar."],
+        ["#the-pond-2026-10-03 p:nth-of-type(4)", "Gracias a The Pond por recibirnos otra vez, y a todos los que fueron, cantaron con nosotros y se quedaron hasta la última canción."],
+        ["#the-pond-2026-10-03 p:nth-of-type(6)", "Y si quieres ayudar, síguenos en todas nuestras redes y ayúdanos a correr la voz sobre Neon Belly. Comparte una publicación, cuéntale a un amigo y etiqueta a tu local favorito. Todo suma."],
+        ["#the-pond-2026-10-03 figure:nth-of-type(1) figcaption", "Flyer del show"],
+        ["#the-pond-2026-10-03 figure:nth-of-type(2) figcaption", "3 de octubre en The Pond"],
+        ["#the-pond-2026-10-03 figure:nth-of-type(3) figcaption", "Dos guitarras, a todo volumen"],
+        ["#the-pond-2026-10-03 .btn.book", "Contrátanos"],
+        ["#the-pond-2026-10-03 .post-share a:nth-of-type(1)", "Enlace permanente"],
+        ["#the-pond-2026-10-03 .post-share a:nth-of-type(2)", "Compartir en Facebook"],
+        [".post-back a", "« Todas las publicaciones"],
         ["#kimbros-2026-08-08 h2", "Kimbro's, de punta a punta"],
         ["#kimbros-2026-08-08 .blog-meta", "Publicado el 9 de agosto de 2026 por Neon Belly"],
         ["#kimbros-2026-08-08 p:nth-of-type(1)", "Hay lugares a los que entras y de una vez sientes que tienes que ganártelos. Kimbro's es uno de esos lugares, y para Hedge era más que eso: tocar en ese escenario fue un sueño muy concreto durante años, desde mucho antes de que Neon Belly existiera para hacerlo realidad."],
@@ -220,6 +243,8 @@
         ["#the-pond-2026-07-11 figure:nth-of-type(2) figcaption", "La banda completa, después del último tema"]
       ],
       html: [
+        ["#the-pond-2026-10-03 p:nth-of-type(5)", '<strong>Lo que sigue:</strong> estamos buscando las últimas fechas para completar 2026 y ya comenzamos a armar el calendario de 2027. Si manejas un bar, un club o un evento privado, o conoces a alguien que lo haga, este es el momento de ponernos en la agenda.'],
+        ["#the-pond-2026-10-03 .post-venue-link", 'Tocamos en <a href="https://thepondinfranklin.com/" target="_blank" rel="noopener">The Pond</a>, 595 Hillsboro Rd #321, Franklin TN &middot; <a href="https://www.instagram.com/pondinfranklin/" target="_blank" rel="noopener">@pondinfranklin</a>'],
         ["#kimbros-2026-08-08 .post-venue-link", 'Tocamos en <a href="https://www.legendarykimbros.com/" target="_blank" rel="noopener">The Legendary Kimbro\'s Pickin\' Parlor</a>, 214 S Margin St, Franklin TN &middot; <a href="https://www.instagram.com/legendarykimbros/" target="_blank" rel="noopener">@legendarykimbros</a>'],
         ["#the-pond-2026-07-11 .post-venue-link", 'Tocamos en <a href="https://thepondinfranklin.com/" target="_blank" rel="noopener">The Pond</a>, 595 Hillsboro Rd #321, Franklin TN &middot; <a href="https://www.instagram.com/pondinfranklin/" target="_blank" rel="noopener">@pondinfranklin</a>']
       ]
@@ -296,7 +321,8 @@
     var file = (path.split("/").pop() || "index.html").replace(".html", "");
     if (!file) file = "index";
     if (path.indexOf("/members/") !== -1) return file;
-    if (path.indexOf("/blog/") !== -1 || path.indexOf("/epk/") !== -1) return "subpage";
+    if (path.indexOf("/blog/") !== -1) return "blog";
+    if (path.indexOf("/epk/") !== -1) return "booking";
     return file === "index" ? "home" : file;
   }
 
