@@ -5827,7 +5827,16 @@ html[data-theme="neonbelly"] .front-hero .photo-placeholder.thumb {
   aspect-ratio: auto;
   border-radius: 0;
   object-fit: cover;
+  filter: grayscale(1) contrast(1.05);
   transform: none !important;
+}
+
+html[data-theme="neonbelly"] .front-hero .hero-member-chris {
+  object-position: 50% 20%;
+}
+
+html[data-theme="neonbelly"] .front-hero .hero-member-nate {
+  object-position: 50% 25%;
 }
 
 html[data-theme="neonbelly"] .front-hero .member-card h3 {
