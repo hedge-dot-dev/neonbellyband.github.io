@@ -5573,6 +5573,22 @@ html[data-theme] .shows-list .show-row .show-price.pending {
   color: var(--accent2-hi);
 }
 
+html[data-theme] .shows-list .show-row .show-price.no-cover {
+  border: 1px solid rgba(255, 230, 0, 0.74);
+  background: rgba(255, 230, 0, 0.16);
+  color: #ffe600;
+  text-shadow: 0 0 6px rgba(255, 230, 0, 0.6);
+}
+
+.shows-list .show-row .show-note {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  font-size: 14px;
+  color: var(--text-dim);
+}
+
+.shows-list .show-row .show-note a { color: var(--link); }
+
 .shows-list .show-date-text {
   display: inline;
   max-width: 100%;
