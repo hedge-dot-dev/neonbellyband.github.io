@@ -43,6 +43,7 @@
     home: {
       title: "Neon Belly | Banda de covers alt-rock y grunge de los 90 y 2000",
       html: [
+        ['.show-row[data-show-date="2026-12-12"] .show-note', 'Abriendo para <a href="https://linktr.ee/TyChase" target="_blank" rel="noopener">Ty Chase</a>'],
         [".tagline-main", '<span class="mixtape-band-callout">NEON BELLY ES TU BANDA DE COVERS PARA SUBIR EL VOLUMEN</span><span class="tagline-support">tocando favoritas del público de</span>'],
         [".tagline-location", 'en Nashville y Franklin <span class="location-tail"><img class="tn-flag" src="images/optimized/tennessee-flag-96.png?v=1" width="96" height="58" alt="Tennessee" title="Tennessee"> y alrededores</span>']
       ],
@@ -54,14 +55,16 @@
         [".btn.book", "Contrátanos"],
         [".hero-shows .hero-shows-heading h2", "Próximas Fechas"],
         [".hero-shows .hero-shows-heading a", "Todas las fechas y crónicas →"],
-        ['.show-row[data-show-date="2026-10-03"] .show-price', "¡Entrada gratis!"],
-        ['.show-row[data-show-date="2026-11-07"] .venue', "Lugar por anunciar, Murfreesboro, TN"],
-        ['.show-row[data-show-date="2026-11-07"] .show-price', "Detalles próximamente"],
-        ['.show-row[data-show-date="2026-12-12"] .venue', "Lugar por anunciar, Franklin, TN"],
-        ['.show-row[data-show-date="2026-12-12"] .show-price', "Detalles próximamente"],
-        ['.show-row[data-show-date="2026-10-03"] .show-date-text', "Sáb, 3 oct 2026 · 8:00 PM – 11:00 PM"],
-        ['.show-row[data-show-date="2026-11-07"] .show-date-text', "Sáb, 7 nov 2026"],
-        ['.show-row[data-show-date="2026-12-12"] .show-date-text', "Sáb, 12 dic 2026"],
+        ['.show-row[data-show-date="2026-10-31"] .venue', "Por anunciar"],
+        ['.show-row[data-show-date="2026-10-31"] .show-price', "¡Próximamente!"],
+        ['.show-row[data-show-date="2026-11-07"] .show-price', "¡Entrada gratis!"],
+        ['.show-row[data-show-date="2026-12-12"] .show-price', "Cover de $10"],
+        ['.show-row[data-show-date="2026-12-31"] .venue', "Por anunciar"],
+        ['.show-row[data-show-date="2026-12-31"] .show-price', "¡Próximamente!"],
+        ['.show-row[data-show-date="2026-10-31"] .show-date-text', "Sáb, 31 oct 2026"],
+        ['.show-row[data-show-date="2026-11-07"] .show-date-text', "Sáb, 7 nov 2026 · 8:00 PM – 11:00 PM"],
+        ['.show-row[data-show-date="2026-12-12"] .show-date-text', "Sáb, 12 dic 2026 · 7:00 PM – 9:00 PM"],
+        ['.show-row[data-show-date="2026-12-31"] .show-date-text', "Jue, 31 dic 2026"],
         [".block-section:nth-of-type(1) .section-title", "La Banda"],
         [".block-section:nth-of-type(2) .section-title", "Del Blog"],
         [".block-section:nth-of-type(2) .section-sub", "Crónicas de shows y noticias de la banda."],
@@ -142,14 +145,16 @@
       text: [
         [".home-hero-copy .tagline", "Próximas fechas y lugares donde hemos tocado."],
         [".block-section:nth-of-type(1) .section-title", "Próximas Fechas"],
-        ['.show-row[data-show-date="2026-10-03"] .show-price', "¡Entrada gratis!"],
-        ['.show-row[data-show-date="2026-11-07"] .venue', "Lugar por anunciar, Murfreesboro, TN"],
-        ['.show-row[data-show-date="2026-11-07"] .show-price', "Detalles próximamente"],
-        ['.show-row[data-show-date="2026-12-12"] .venue', "Lugar por anunciar, Franklin, TN"],
-        ['.show-row[data-show-date="2026-12-12"] .show-price', "Detalles próximamente"],
-        ['.show-row[data-show-date="2026-10-03"] .show-date-text', "Sáb, 3 oct 2026 · 8:00 PM – 11:00 PM"],
-        ['.show-row[data-show-date="2026-11-07"] .show-date-text', "Sáb, 7 nov 2026"],
-        ['.show-row[data-show-date="2026-12-12"] .show-date-text', "Sáb, 12 dic 2026"],
+        ['.show-row[data-show-date="2026-10-31"] .venue', "Por anunciar"],
+        ['.show-row[data-show-date="2026-10-31"] .show-price', "¡Próximamente!"],
+        ['.show-row[data-show-date="2026-11-07"] .show-price', "¡Entrada gratis!"],
+        ['.show-row[data-show-date="2026-12-12"] .show-price', "Cover de $10"],
+        ['.show-row[data-show-date="2026-12-31"] .venue', "Por anunciar"],
+        ['.show-row[data-show-date="2026-12-31"] .show-price', "¡Próximamente!"],
+        ['.show-row[data-show-date="2026-10-31"] .show-date-text', "Sáb, 31 oct 2026"],
+        ['.show-row[data-show-date="2026-11-07"] .show-date-text', "Sáb, 7 nov 2026 · 8:00 PM – 11:00 PM"],
+        ['.show-row[data-show-date="2026-12-12"] .show-date-text', "Sáb, 12 dic 2026 · 7:00 PM – 9:00 PM"],
+        ['.show-row[data-show-date="2026-12-31"] .show-date-text', "Jue, 31 dic 2026"],
         [".block-section:nth-of-type(2) .section-title", "Fechas Anteriores"],
         [".block-section:nth-of-type(2) .section-sub", "Cada fecha anterior enlaza directamente a su crónica."],
         [".past-show-row:nth-of-type(1) .past-show-date", "3 oct 2026"],
@@ -164,6 +169,7 @@
         [".poster-card:nth-of-type(2) .read-recap", "Lee la crónica »"]
       ],
       html: [
+        ['.show-row[data-show-date="2026-12-12"] .show-note', 'Abriendo para <a href="https://linktr.ee/TyChase" target="_blank" rel="noopener">Ty Chase</a>'],
         [".shows-secondary", '¿Quieres a Neon Belly en tu bar, local o evento privado? <a href="booking.html">Ver cómo contratarnos &raquo;</a>']
       ]
     },
@@ -454,9 +460,10 @@
     text: text,
     showDateText: function (raw, fallback) {
       if (readLang() !== SPANISH) return fallback;
-      if (raw === "2026-10-03") return "Sáb, 3 oct 2026 · 8:00 PM – 11:00 PM";
-      if (raw === "2026-11-07") return "Sáb, 7 nov 2026";
-      if (raw === "2026-12-12") return "Sáb, 12 dic 2026";
+      if (raw === "2026-10-31") return "Sáb, 31 oct 2026";
+      if (raw === "2026-11-07") return "Sáb, 7 nov 2026 · 8:00 PM – 11:00 PM";
+      if (raw === "2026-12-12") return "Sáb, 12 dic 2026 · 7:00 PM – 9:00 PM";
+      if (raw === "2026-12-31") return "Jue, 31 dic 2026";
       return fallback;
     },
     daysAway: function (days) {
