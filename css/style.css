@@ -5580,14 +5580,22 @@ html[data-theme] .shows-list .show-row .show-price.no-cover {
   text-shadow: 0 0 6px rgba(255, 230, 0, 0.6);
 }
 
+/* grid-row stays auto so the note always lands in the first free row below
+   the venue/price/date cells, including the Home card where the date line
+   is already pinned to row 2 */
 .shows-list .show-row .show-note {
   grid-column: 1 / -1;
-  grid-row: 2;
+  grid-row: auto;
   font-size: 14px;
   color: var(--text-dim);
 }
 
 .shows-list .show-row .show-note a { color: var(--link); }
+
+html[data-theme="neonbelly"] .front-hero .hero-shows .show-note {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.76);
+}
 
 .shows-list .show-date-text {
   display: inline;
