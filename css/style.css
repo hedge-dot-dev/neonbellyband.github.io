@@ -5597,6 +5597,40 @@ html[data-theme="neonbelly"] .front-hero .hero-shows .show-note {
   color: rgba(255, 255, 255, 0.76);
 }
 
+/* RSVP call to action under a show: Facebook blue, since it opens the
+   show's Facebook event page */
+.shows-list .show-row .show-rsvp {
+  grid-column: 1 / -1;
+  grid-row: auto;
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+  background: #1877f2;
+  color: #fff;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.shows-list .show-row .show-rsvp:hover,
+.shows-list .show-row .show-rsvp:focus-visible {
+  background: #3b8bff;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+html[data-theme="neonbelly"] .front-hero .hero-shows .show-rsvp {
+  padding: 8px 13px;
+  font-size: 11px;
+}
+
 .shows-list .show-date-text {
   display: inline;
   max-width: 100%;
